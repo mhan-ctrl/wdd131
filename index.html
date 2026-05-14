@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -25,27 +26,42 @@
     </header>
     <main>
         <h1>Merrill Hansen</h1>
-        <section class="card">
+        <section class="about-card">
             <h2>About Me</h2>
-            <div class="card-content">
-                <div class="author-summary">
-                    <p>My name is Merrill Hansen. I don't like uploading high quality images of myself to the open web. I enjoy computers and helping people understand computers better. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequatur voluptas magnam aut, sed doloremque delectus tempora quibusdam deleniti aspernatur neque. Totam obcaecati illo tenetur. Ad placeat dicta dolorem in.</p>
-                    <img src="images/profile.jpg" alt="Pixelated Image of Merrill Hansen">
-                </div>
-                <h3>Utah, United States</h3>
-                <div class="location-summary">
-                    <p>The state of Utah was populated by various indigenous groups before Europeans began arriving in the mid 16th century. Later, near the mid 1800's, the Latter-Day Saints fled to Utah in large numbers and the area was annexed by the U.S. becoming the Utah Territory (which included colorado and Nevada). Utah was admitted as a state in 1896.</p>
-                    <img src="images/Flag_of_Utah.svg" alt="The state flag of Utah">
-                </div>
+            <div class="author-summary">
+                <p>
+                    <img src="images/profile.jpg" alt="Pixelated Image of Merrill Hansen">My name is Merrill Hansen. I don't like uploading high quality
+                    images of myself to the open web. I enjoy computers and helping people
+                    understand computers better. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequatur voluptas magnam aut, sed
+                    doloremque delectus tempora quibusdam deleniti aspernatur neque. Totam obcaecati illo tenetur. Ad placeat dicta dolorem in.
+                </p>
+
+            </div>
+            <h3>Utah, United States</h3>
+            <div class="location-summary">
+                <p>
+                    <img src="images/Flag_of_Utah.svg" alt="The state flag of Utah">The state of Utah was populated by various indigenous groups before
+                    Europeans began arriving in the mid 16th century. Later, near the mid
+                    1800's, the Latter-Day Saints fled to Utah in large numbers and the area was annexed by the U.S. becoming the Utah Territory (which
+                    included colorado and Nevada). Utah was admitted as a state in 1896.
+                </p>
             </div>
         </section>
-        <section class="card">
+        <section class="resource-card">
             <h2>Web Dev Resources</h2>
-            <div class="card-content"></div>
+            <div class="resource-list">
+                <ul>
+                    <li><a href="https://www.youtube.com">YouTube</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Docs</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                    <li><a href="https://stackoverflow.com/questions">Stack Overflow</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <p><span id="currentyear"></span> Merrill Hansen | Utah</p>
+        <p><span id="currentyear">©2026</span> | Merrill Hansen | Utah</p>
         <p id="lastmodified"></p>
     </footer>
 </body>
