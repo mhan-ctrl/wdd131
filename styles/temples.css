@@ -91,10 +91,9 @@ main {
 .navigation {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
     list-style: none;
     background-color: aquamarine;
-    position: absolute;
+    position: fixed;
     top: 3rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -103,9 +102,14 @@ main {
 
 .navigation.open {
     display: flex;
+    width: 80vw;
+    height: 80vh;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
-.navigation li {
+.navigation a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -113,7 +117,7 @@ main {
     color: black;
 }
 
-.navigation li:hover {
+.navigation a:hover {
     background-color: rgb(1, 94, 94);
     color: white;
     border-radius: 5px;
