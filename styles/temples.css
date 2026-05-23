@@ -24,14 +24,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
     margin: 0px;
     padding: 10px;
     background-color: aquamarine;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-body {
 
-}
+body {}
 
 div {
     font-family: "Felipa", serif;
@@ -70,13 +70,35 @@ main {
     content: "✖"
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery figcaption {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .navigation {
     display: none;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .navigation.open {
@@ -87,6 +109,7 @@ main {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
+    font-size: 1.5rem;
     color: black;
 }
 
