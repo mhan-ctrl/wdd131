@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+}
