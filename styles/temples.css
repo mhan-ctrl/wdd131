@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+.roboto-friendly {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -23,14 +32,41 @@ div {
     font-size: 3rem;
 }
 
-.open a {
-    display: block;
+#menu {
+    font-size: 1.5rem;
+    position: absolute;
+    background: rgb(0, 191, 255);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 #menu::before {
-content: "☰"
+    content: "☰"
 }
 
 #menu.open::before {
     content: "✖"
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+}
+
+.open a {
+    display: block;
 }
