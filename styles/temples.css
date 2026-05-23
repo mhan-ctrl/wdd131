@@ -1,0 +1,36 @@
+/* Google font */
+.felipa-regular {
+    font-family: "Felipa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    margin: 10px;
+    padding: 10px;
+}
+
+div {
+    font-family: "Felipa", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.open a {
+    display: block;
+}
+
+#menu::before {
+content: "☰"
+}
+
+#menu.open::before {
+    content: "✖"
+}
