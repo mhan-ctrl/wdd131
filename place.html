@@ -21,17 +21,26 @@
     <main>
         <!--small image for mobile view-->
         <figure class="image-small">
-            <img src="images/italy-flag.webp" alt="An Italian Flag with a building in the background">
+            <picture>
+                <source srcset="images/italy-flag.webp" media="(max-width: 899px)">
+                <img src="images/italy-flag.webp" alt="An Italian Flag with a building in the background">
+            </picture>
         </figure>
         <!--large image for wide view-->
         <figure class="hero">
-            <img src="images/italy-mountains.webp" alt="An Italian Flag with the Italian Alps in the background">
+            <picture>
+                <source srcset="images/italy-mountains.webp" media="(min-width: 900px)">
+                <img src="images/italy-mountains.webp" alt="An Italian Flag with the Italian Alps in the background">
+            </picture>
         </figure>
 
         <section class="section-a">
+            <h2>Data</h2>
             <p>placeholder</p>
         </section>
         <section class="section-b">
+            <h3>Weather ⛅</h3>
+            <img class="weather-svg" src="images/sun-clouds.svg" alt="An Icon of the sun behind a cloud">
             <p>placeholder</p>
         </section>
     </main>

@@ -12,11 +12,15 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
 }
 
 main {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 figure {
@@ -24,7 +28,7 @@ figure {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -33,12 +37,16 @@ footer {
     text-align: center;
 }
 
+.hero img {
+    display: none;
+}
+
+.weather-svg {
+    height: 3rem;
+    width: auto;
+}
+
 @media (min-width: 900px) {
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .hero {
         position: relative;
         height: 100vh;
@@ -73,5 +81,9 @@ footer {
         max-width: 300px;
         background: rgba(255, 255, 255, 0.85);
         padding: 1rem;
+    }
+
+    .weather-svg {
+        display: none;
     }
 }
