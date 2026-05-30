@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+header {
+    font-size: 2rem;
+}
+
 main {
     display: block;
 }
@@ -25,10 +29,12 @@ img {
     display: block;
 }
 
+footer {
+    text-align: center;
+}
+
 @media (min-width: 900px) {
     header{
-        position: relative;
-        z-index: 10;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -53,8 +59,8 @@ img {
 
     .section-a {
         position: absolute;
-        top: 1rem;
-        left: 1rem;
+        top: 8rem;
+        left: 2rem;
         max-width: 300px;
         background: rgba(255, 255, 255, 0.85);
         padding: 1rem;
