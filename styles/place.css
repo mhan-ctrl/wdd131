@@ -1,8 +1,7 @@
 /*  font-family: "Space Mono", monospace; font-weight: 400; font-style: normal; */
 
 :root {
-    --nav-color: rgb(0, 36, 104);
-    --header-color: rgb(58, 58, 58);
+    --italy-background: linear-gradient(to right, green, white, white, red);
 }
 
 * {
@@ -16,6 +15,8 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    background: var(--italy-background);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 main {
@@ -35,6 +36,9 @@ img {
 
 footer {
     text-align: center;
+    font-size: 1.25rem;
+    background: var(--italy-background);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .hero img {
@@ -72,6 +76,7 @@ footer {
         max-width: 300px;
         background: rgba(255, 255, 255, 0.85);
         padding: 1rem;
+        margin: 1rem;
     }
 
     .section-b {
@@ -81,6 +86,7 @@ footer {
         max-width: 300px;
         background: rgba(255, 255, 255, 0.85);
         padding: 1rem;
+        margin: 1rem;
     }
 
     .weather-svg {
