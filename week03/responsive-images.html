@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Practice</title>
+    <meta name="description" content="A page for Merrill to test and learn responsive image design principles.">
+    <meta name="author" content="Merrill Hansen">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Oakland Temple in Oakland California" width="500" height="250">
+            </picture>
+        </div>
+
+    </main>
+</body>
+</html>
