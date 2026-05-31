@@ -34,11 +34,21 @@ img {
     display: block;
 }
 
+section {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: white;
+}
+
 footer {
     text-align: center;
     font-size: 1.25rem;
     background: var(--italy-background);
     border: 1px solid rgb(0, 0, 0);
+}
+
+.section-a ul{
+    list-style: none;
 }
 
 .hero img {
@@ -78,7 +88,6 @@ footer {
         top: 8rem;
         left: 2rem;
         max-width: 300px;
-        background: rgba(255, 255, 255, 0.85);
         padding: 1rem;
         margin: 1rem;
     }
@@ -88,7 +97,6 @@ footer {
         bottom: 1rem;
         right: 1rem;
         max-width: 300px;
-        background: rgba(255, 255, 255, 0.85);
         padding: 1rem;
         margin: 1rem;
     }
