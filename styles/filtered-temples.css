@@ -1,0 +1,133 @@
+/* Google font */
+.felipa-regular {
+    font-family: "Felipa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-friendly {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin: 0px;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: rgb(240, 255, 250);
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: rgb(0, 140, 255);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#menu::before {
+    content: "☰"
+}
+
+#menu.open::before {
+    content: "✖"
+}
+
+.card {
+    background-color: rgb(225, 250, 242);
+    padding: 10px;
+    border: 1px solid rgba(1, 94, 94, 0.2);
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery figcaption {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: aquamarine;
+    position: fixed;
+    top: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navigation.open {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navigation a:hover {
+    background-color: rgb(1, 94, 94);
+    color: white;
+    border-radius: 5px;
+}
+
+.site-title {
+    font-family: "Felipa", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}

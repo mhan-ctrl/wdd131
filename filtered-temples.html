@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="A page containing images of Latter-Day Saint Temples, with lazy loading considerations.">
+    <meta name="author" content="Merrill Hansen">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="site-title">Temple Album</div>
+        <nav class="navigation">
+            <a href="#" title="Home" id="home">Home</a>
+            <a href="#" title="Old" id="old">Old</a>
+            <a href="#" title="New" id="new">New</a>
+            <a href="#" title="Large" id="large">Large</a>
+            <a href="#" title="Small" id="small">Small</a>
+        </nav>
+        <button class="hamburger" id="menu"></button>
+    </header>
+    <main>
+        <h1>Temples</h1>
+        <div class="gallery">
+
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Merrill Hansen | Utah</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
