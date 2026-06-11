@@ -1,5 +1,71 @@
+:root {
+    --background-main: #0b0d10;
+    --background-surface: #141821;
+    --border-divider: #2a2f3a;
+    --primary-txt: #e6e8ee;
+    --secondary-txt: #a7aab3;
+    --accent-clr: #4c7dff;
+}
+
+.eb-garamond-accent {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+header {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-main);
+    color: var(--primary-txt);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div {
+    background-color: var(--background-surface);
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--border-divider);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-clr);
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
 }
