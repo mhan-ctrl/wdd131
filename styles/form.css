@@ -1,0 +1,115 @@
+:root {
+    --primary: #4c7dff;
+    --border: #d0d7e2;
+    --card: #ffffff;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+}
+
+header{
+    text-align: center;
+    margin: 1rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    background: var(--card);
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+}
+
+fieldset{
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-top: 1rem;
+}
+
+label{
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+footer{
+    text-align: center;
+    margin: 1rem;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+button[type="submit"]:hover{
+    background-color: #3a66d6;
+}
+
+/* Class Selectors */
+.rating-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.rating-radio label{
+    font-size: 0.8rem;
+}
+
+.feature-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.check label {
+    white-space: nowrap;
+    margin-left: 1rem;
+    width: 200%;
+}

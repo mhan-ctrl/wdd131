@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <meta name="description" content="A page for Merrill Hanse to practice form setup">
+    <meta name="author" content="Merrill Hansen">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select name="product-name" id="product" required>
+                <option value="" selected disabled>Select a product</option>
+            </select>
+            <fieldset class="rating-radio">
+                <legend>Overall Rating</legend>
+                <div class="option">
+                    <label for="one">⭐</label>
+                    <input type="radio" id="one" name="rating" value="1" required>
+                </div>
+                <div class="option">
+                    <label for="two">⭐⭐</label>
+                    <input type="radio" id="two" name="rating" value="2">
+
+                </div>
+                <div class="option">
+                    <label for="three">⭐⭐⭐</label>
+                    <input type="radio" id="three" name="rating" value="3">
+                </div>
+                <div class="option">
+                    <label for="four">⭐⭐⭐⭐</label>
+                    <input type="radio" id="four" name="rating" value="4">
+                </div>
+                <div class="option">
+                    <label for="five">⭐⭐⭐⭐⭐</label>
+                    <input type="radio" id="five" name="rating" value="5">
+                </div>
+            </fieldset>
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+            <fieldset class="feature-checkbox">
+                <legend>
+                    Which features did you find useful?
+                    <span class="italic">(check all that apply)</span>
+                </legend>
+                <div class="check">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                    <label for="ease-of-use">Ease of Use</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+            <label for="review">Written Review <span class="optional">(optional)</span></label>
+            <textarea name="review" id="review"></textarea>
+            <label for="name">Your Name <span class="optional">(optional)</span></label>
+            <input type="text" id="name" name="user-name">
+            <button type="submit">Send Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Merrill Hansen | Utah</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
