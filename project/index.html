@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's that Psychopomp</title>
+    <meta name="description" content="A website sharing information about some of the many psychopomps that exist in the world.">
+    <meta name="author" content="Merrill Hansen">
+    <link rel="stylesheet" href="styles/whos-that-psychopomp.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="site-title">
+            <h1>Who's That Psychopomp?</h1>
+            <p>Guides of the dead from cultures around the world.</p>
+        </div>
+
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Featured</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="about.html">About & Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <button id="random-btn">
+                Reveal Another Guide
+            </button>
+        </section>
+        <article id="psychopomp-card">
+            <figure>
+                <img id="psychopomp-image" src="images/placeholder.webp" alt="">
+                <figcaption id="psychopomp-culture"></figcaption>
+            </figure>
+            <div class="psychopomp-content">
+                <h2 id="psychopomp-name"></h2>
+                <p id="psychopomp-summary"></p>
+                <section>
+                    <h3>Domains</h3>
+                    <ul id="psychopomp-domains"></ul>
+                </section>
+                <section>
+                    <h3>Symbols</h3>
+                    <ul id="psychopomp-symbols"></ul>
+                </section>
+                <section>
+                    <h3>Origins and Traditions</h3>
+                    <p id="psychopomp-description"></p>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Merrill Hansen | Utah</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

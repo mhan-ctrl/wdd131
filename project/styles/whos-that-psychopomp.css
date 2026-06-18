@@ -1,0 +1,231 @@
+:root {
+    --background-main: #0b0d10;
+    --background-surface: #141821;
+    --border-divider: #2a2f3a;
+
+    --primary-txt: #e6e8ee;
+    --secondary-txt: #a7aab3;
+
+    --accent-clr: #4c7dff;
+    --accent-hover: #6b92ff;
+
+    --max-width: 1200px;
+}
+
+.eb-garamond-accent {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-main);
+    color: var(--primary-txt);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--background-surface);
+    border-bottom: 1px solid var(--border-divider);
+    padding: 1.5rem;
+}
+
+h1, h2, h3, nav a {
+    font-family: "EB Garamond", serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
+
+main {
+    flex: 1;
+    width: min(100% - 2rem, var(--max-width));
+    margin: 0 auto
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--accent-clr);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover, a:focus-visible {
+    color: var(--accent-hover);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--accent-clr);
+    color: white;
+    padding: 0.9rem 1.5rem;
+    font: inherit;
+    transition: background-color 0.2s ease;
+}
+
+button:hover,
+button:focus-visible {
+    background-color: var(--accent-hover);
+}
+
+footer {
+    border-top: 1px solid var(--border-divider);
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--secondary-txt);
+}
+
+/* class selectors */
+.site-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.site-title p {
+    color: var(--secondary-txt);
+}
+
+.psychopomp-grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.psychopomp-card {
+    background-color: var(--background-surface);
+
+    border: 1px solid var(--border-divider);
+    border-radius: var(--radius);
+
+    overflow: hidden;
+}
+
+.card-content {
+    padding: var(--space-md);
+}
+
+.card-content h3 {
+    margin-bottom: var(--space-xs);
+}
+
+.culture {
+    color: var(--secondary-txt);
+    margin-bottom: var(--space-sm);
+}
+
+.hero {
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+/* id selectors */
+#psychopomp-card {
+    background-color: var(--background-surface);
+    border: 1px solid var(--border-divider);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+#psychopomp-image {
+    height: 80vh;
+    width: auto;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#psychopomp-content {
+    padding: 1.5rem;
+}
+
+#psychopomp-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#psychopomp-culture {
+    color: var(--secondary-txt);
+    margin-bottom: 1.5rem;
+}
+
+#psychopomp-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.psychopomp-content li {
+    background-color: rgba(76, 125, 255, 0.12);
+
+    border: 1px solid var(--border-divider);
+    border-radius: 100px;
+
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1.5rem 3.0rem;
+    }
+
+    .site-title {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    #psychopomp-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .psychopomp-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
