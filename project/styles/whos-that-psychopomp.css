@@ -229,3 +229,10 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
+
+@media (max-width: 600px){
+    .psychopomp-card img {
+        object-fit: contain;
+        background-color: var(--background-surface);
+    }
+}

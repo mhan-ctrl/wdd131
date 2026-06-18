@@ -8,7 +8,6 @@ const symbols = document.querySelector("#psychopomp-symbols");
 const description = document.querySelector("#psychopomp-description");
 const randomButton = document.querySelector("#random-btn");
 
-// Read the URL parameter
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
